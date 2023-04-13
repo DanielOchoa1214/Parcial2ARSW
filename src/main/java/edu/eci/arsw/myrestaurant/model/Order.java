@@ -9,6 +9,7 @@ public class Order {
 
 
     private Map<String, Integer> orderAmountsMap;
+    private int total;
 
     public Map<String, Integer> getOrderAmountsMap() {
         return orderAmountsMap;
@@ -55,6 +56,14 @@ public class Order {
         } else {
             return orderAmountsMap.get(p);
         }
+    }
+
+    public void setTotal(int total) {
+        this.total = total;
+    }
+
+    public int getTotal() {
+        return total;
     }
 
     @Override

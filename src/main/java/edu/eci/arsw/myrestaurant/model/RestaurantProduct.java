@@ -5,13 +5,9 @@ public class RestaurantProduct  {
 	private int price;
 
 	private String name;
-        
-        private ProductType type;
+    private ProductType type;
 
-
-        public RestaurantProduct(){
-            
-        }
+    public RestaurantProduct(){}
         
 	public RestaurantProduct(String nombre, int precio, ProductType type) {
 		super();
