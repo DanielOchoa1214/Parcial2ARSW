@@ -88,7 +88,8 @@ public class RestaurantOrderServicesStub implements RestaurantOrderServices {
     @Override
     public Map<Integer, Order> getOrders(){
         for(Integer key: tableOrders.keySet()){
-            tableOrders.get(key).setTotal(calc.calculateBill(tableOrders.get(key), productsMap));
+            Order o = tableOrders.get(key);
+            o.setTotal(calc.calculateBill(o, productsMap));
         }
         return tableOrders;
     }
